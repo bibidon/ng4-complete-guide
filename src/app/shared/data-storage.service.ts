@@ -14,7 +14,7 @@ export class DataStorageService {
     private http: HttpClient,
     private recipeService: RecipeService,
     private store: Store<fromApp.AppState>
-  ) {}
+  ) { }
 
   storeRecipes() {
     const recipes = this.recipeService.getRecipes();

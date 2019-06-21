@@ -18,7 +18,7 @@ export class RecipesResolverService implements Resolve<Recipe[]> {
   constructor(
     private store: Store<fromApp.AppState>,
     private actions$: Actions
-  ) {}
+  ) { }
 
   resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
     // return this.dataStorageService.fetchRecipes();
